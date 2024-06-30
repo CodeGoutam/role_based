@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 const Moderator = () => {
     const [data, setdata] = useState([])
     let fetching = async () => {
-        let res = await fetch('http://localhost:5000/api/moderator', {
+        // let res = await fetch('http://localhost:5000/api/moderator', {
+        let res = await fetch('https://role-based-backend-hbzg.onrender.com/api/moderator', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
         }).then(async (res) => {

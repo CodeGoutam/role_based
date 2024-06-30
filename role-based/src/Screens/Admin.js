@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react'
 const Admin = (props) => {
     const [data, setdata] = useState([])
     let fetching = async () => {
-        let res = await fetch('http://localhost:5000/api/admin', {
+        // let res = await fetch('http://localhost:5000/api/admin', {
+        let res = await fetch('https://role-based-backend-hbzg.onrender.com/api/admin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
         }).then(async (res) => {

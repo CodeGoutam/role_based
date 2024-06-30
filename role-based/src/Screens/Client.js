@@ -7,7 +7,8 @@ const Client = () => {
         role: ''
     });
     let fetching = async () => {
-        let res = await fetch('http://localhost:5000/api/client', {
+        // let res = await fetch('http://localhost:5000/api/client', {
+        let res = await fetch('https://role-based-backend-hbzg.onrender.com/api/client', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
